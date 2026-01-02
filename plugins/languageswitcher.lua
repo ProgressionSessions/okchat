@@ -39,8 +39,8 @@ function Plugin.onLoad()
 	
 	-- >> Modules
 	
-	local Translator = loadstring(game:HttpGet("https://cdn.progressionsoftworks.dev/scripts/chat/plugin_deps/Translator.lua"))()
-	local ISO_Codes = loadstring(game:HttpGet("https://cdn.progressionsoftworks.dev/scripts/chat/plugin_deps/ISOCodes.lua"))()
+	local Translator = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProgressionSessions/okchat/refs/heads/main/plugin_deps/Translator.lua"))()
+	local ISO_Codes = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProgressionSessions/okchat/refs/heads/main/plugin_deps/ISOCodes.lua"))()
 	print(ISO_Codes)
 	
 	-- >> Variables
@@ -120,5 +120,6 @@ function Plugin.onLoad()
 	Functions.systemMessage("[ LanguageSwitcher ]","Successfully loaded, enjoy!",Color3.fromRGB(170, 85, 255))
 	
 end
+
 
 return Plugin
