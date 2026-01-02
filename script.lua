@@ -270,10 +270,10 @@ local Succ,Err = pcall(function()
 
 	-- import
 
-	local fetchJson = run_service:IsStudio() and loadstring(game:HttpGet('https://cdn.progressionsoftworks.dev/scripts/chat/dependencies/load_json.lua'))() or require(script:WaitForChild("fetchJson"))
+	local fetchJson = run_service:IsStudio() and loadstring(game:HttpGet('https://raw.githubusercontent.com/ProgressionSessions/okchat/refs/heads/main/dependencies/load_json.lua'))() or require(script:WaitForChild("fetchJson"))
 
-	local developer_database = fetchJson("https://cdn.progressionsoftworks.dev/scripts/chat/json/developers.json")
-	local internal_themes = fetchJson("https://cdn.progressionsoftworks.dev/scripts/chat/json/themes.json")
+	local developer_database = fetchJson("https://github.com/ProgressionSessions/okchat/blob/main/json/developers.json")
+	--local internal_themes = fetchJson("https://cdn.progressionsoftworks.dev/scripts/chat/json/themes.json")
 
 	task.wait(.23)
 
@@ -1144,3 +1144,4 @@ end)
 if Err then
 	warn("PROGRESSIONCHAT | CRITICAL CHAT ERROR: ",Err)
 end
+
