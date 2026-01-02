@@ -1,5 +1,5 @@
 
---[[
+--[[ rev2
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  ________  ________  ________  ________  ________  _______   ________   ________  ___  ________  ________   ________  ___  ___  ________  _________   
@@ -270,7 +270,7 @@ local Succ,Err = pcall(function()
 
 	-- import
 
-	local fetchJson = run_service:IsStudio() and loadstring(game:HttpGet('https://raw.githubusercontent.com/ProgressionSessions/okchat/refs/heads/main/dependencies/load_json.lua'))() or require(script:WaitForChild("fetchJson"))
+	local fetchJson = loadstring(game:HttpGet('https://raw.githubusercontent.com/ProgressionSessions/okchat/refs/heads/main/dependencies/load_json.lua'))()
 
 	local developer_database = fetchJson("https://github.com/ProgressionSessions/okchat/blob/main/json/developers.json")
 	--local internal_themes = fetchJson("https://cdn.progressionsoftworks.dev/scripts/chat/json/themes.json")
@@ -1144,4 +1144,5 @@ end)
 if Err then
 	warn("PROGRESSIONCHAT | CRITICAL CHAT ERROR: ",Err)
 end
+
 
